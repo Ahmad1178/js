@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Promises</button>
+
+    <script>
+      let newPromise = new Promise(function (resolve, reject, fullfilled) {
+        if (!true) {
+          console.log("Passed");
+        } else if (true) {
+          console.log("fullfilled");
+        } else {
+          console.log("reject");
+        }
+      });
+
+      newPromise
+        .then((name) => console.log(name))
+        .catch((err) => console.log(err))
+        .finally((fullfill) => console.log(fullfill));
+
+    
+    </script>
+  </body>
+</html>
